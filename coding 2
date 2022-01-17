@@ -1,0 +1,32 @@
+package LabTest;
+import java.util.Scanner;
+public class Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int item0, item1, item2, item3, item4;
+		int num;
+		int reversenum = 0;
+	    Scanner input = new Scanner(System.in);
+	    
+
+	    int i=0;
+	    do
+	    {
+	    	System.out.println("Enter a positive number : ");
+	    	num=input.nextInt();
+	    	int positivenum = num%10;
+	    	reversenum = reversenum*10+num;
+	    	num/=10;
+	    	i++;
+	    }
+	    while(i<5);
+	    System.out.println("The reverse is : " + reversenum);
+	    
+
+
+}
+
+
+
+}
