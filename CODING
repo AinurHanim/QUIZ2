@@ -1,0 +1,32 @@
+package LabTest;
+import java.util.Scanner;
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int allowed;
+		int classesattendace;
+		int classesheld;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Number of classes held : ");
+		classesheld=scan.nextInt();
+		
+		System.out.println("The number of classes attended : ");
+		classesattendace = scan.nextInt();
+		
+		allowed = (classesattendace/classesheld)*100;
+		
+		if(allowed<=75)
+		{
+			System.out.println("Student is not allowed to sit");
+		}
+		else
+		{
+			System.out.println("Student is allowed to sit");
+		}
+
+	}
+
+}
